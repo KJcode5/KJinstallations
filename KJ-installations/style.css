@@ -23,8 +23,10 @@
 }
 
 body {
-    height: 100%;
-    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hidden {
@@ -33,10 +35,9 @@ body {
 
 /* Page */
 #page {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 100vh;
-    margin-top: 110px;
-    margin-bottom: 1rem;
 }
 
 
@@ -47,7 +48,6 @@ header {
     width: 100%;
     padding: 1rem;
     background-color: white;
-    position: fixed;
     top: 0;
     z-index: 9;;
 
@@ -60,7 +60,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
 }
 
 nav li {
@@ -380,10 +379,11 @@ hr {
 }
 /* Footer */
 footer {
-    width: 100%;
+    width: 100vw;
     padding: 1rem;
     color: #73D9C6;
     background-color: #000;
+    align-self: end;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -426,4 +426,3 @@ span > svg {
     align-self: center;
     font-size: 10px;
 }
-
